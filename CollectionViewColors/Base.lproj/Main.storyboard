@@ -17,9 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uQe-53-Yli">
-                                <rect key="frame" x="20" y="44" width="374" height="818"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uQe-53-Yli">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="okW-WM-SGd">
                                     <size key="itemSize" width="128" height="128"/>
@@ -41,7 +40,16 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uQe-53-Yli" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="327-Zi-Bx0"/>
+                            <constraint firstItem="uQe-53-Yli" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Q6X-2i-jAA"/>
+                            <constraint firstItem="uQe-53-Yli" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tke-ai-LW7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uQe-53-Yli" secondAttribute="trailing" id="uaC-mn-9kp"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="CollectionViewExample" destination="uQe-53-Yli" id="y1k-ir-8U1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
