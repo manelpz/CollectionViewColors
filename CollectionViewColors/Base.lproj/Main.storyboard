@@ -48,7 +48,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="CollectionViewExample" destination="uQe-53-Yli" id="y1k-ir-8U1"/>
+                        <outlet property="CollectionViewColor" destination="uQe-53-Yli" id="h9x-bN-8ur"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

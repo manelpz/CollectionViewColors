@@ -12,13 +12,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        setUpCollectionView(collection: CollectionViewExample)
+        setUpCollectionView(collection: CollectionViewColor)
     }
 
     //variables
     
     //IBOutlet
-    @IBOutlet var CollectionViewExample: UICollectionView!
+    @IBOutlet var CollectionViewColor: UICollectionView!
     
     //IBActions
     
@@ -33,15 +33,16 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     //number of items
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 500
+        return 100
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
+        //admin memory
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CellColor", for: indexPath)
         
         //addign colors
-        
+        //adding 100 to create soft colors
         let red = CGFloat(Int(arc4random_uniform(155))+100)
         let blue = CGFloat(Int(arc4random_uniform(155))+100)
         let green = CGFloat(Int(arc4random_uniform(155))+100)
